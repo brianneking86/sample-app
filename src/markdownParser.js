@@ -21,11 +21,11 @@ const wrapInTags = (line, type) => {
 }
 
 const getMarkdownType = (firstString) => {
-    if (firstString.match(/#{1}/)) {
-        return lineTypes.HEADER_ONE;
-    }
     if (firstString.match(/#{2}/)) {
         return lineTypes.HEADER_TWO;
+    }
+    if (firstString.match(/#{1}/)) {
+        return lineTypes.HEADER_ONE;
     }
     if (firstString.match(/\*{1}/)) {
         return lineTypes.LINE_ITEM;
