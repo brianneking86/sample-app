@@ -51,7 +51,7 @@ export const markdownParser = (markdown) => {
         const type = getMarkdownType(line.split(" ")[0]);
         
         // Remove the initial character if there is one
-        line = line.replace(/[#\*]+/, "").trim();
+        line = line.replace(/[#*]+/, "").trim();
         const htmlLine = wrapInTags(line, type);
 
         // In the case that it is <p> or <li>, we have to check to see what comes next
