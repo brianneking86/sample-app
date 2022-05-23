@@ -7,6 +7,7 @@ function App() {
 
   return (
     <div className="App">
+      <div>Here is some parsed markdown</div>
       <div dangerouslySetInnerHTML={{__html: htmlString}} />
 
       <div>Raw string: {htmlString}</div>
